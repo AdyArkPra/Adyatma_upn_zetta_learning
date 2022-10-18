@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Adyatma_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <center style="background-color: rgb(134, 215, 199);">
+        <div class="container">
+            <p>&nbsp;</p>
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-9">
+                    <div class="card h-20" style="padding: 10pt; border-radius: 20px;">
+                        <h2>Multimedia</h2>
+                        <p>Music, Video & Document</p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row justify-content-md-center" style="height: max-content">
+                <div class="col col-lg-3">
+                    <div class="card h-20" style=" border-radius: 20px;">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6" class="card-img-top"
+                            alt="Image not available" style="border-radius: 20px 20px 0px 0px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Music Player</h5>
+                            <p class="card-text">Coldplay - Hymne for the weekend</p>
+                            <audio src="Assets/Music.mp3" controls loop style="width: 100%;">
+                                Your browser doesn 't support audio files
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3">
+                    <div class="card h-20" style="height: 100%; border-radius: 20px;">
+                        <video src="Assets/Video.mp4" controls width="100%" height="65%" class="card-img-top"
+                            style="background-color: black; border-radius: 20px 20px 0px 0px;">
+                            Your browser doesn 't support the latest web
+                            standards
+                        </video>
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Video Player</h5>
+                            <p class="card-text">F1 2020 - Dummy Move</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Created by Adyatma Arkaan Pradipa -->
+                <div class="col col-lg-3">
+                    <div class="card h-20" style="height: 100%; border-radius: 20px;">
+                        <iframe class="card-img-top" height="65%" src="https://www.youtube.com/embed/ZXn78lI52hw"
+                            frameborder="0" allowfullscreen style="border-radius: 20px 20px 0px 0px;"></iframe>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Embed Video Player</h5>
+                            <p class="card-text">Boothcamp by ZettaByte x UPN Veteran Yogyakarta "ZettaCamp Catfish"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-9">
+                    <div class="card h-20" style="height: 720px; border-radius: 20px;">
+                        <object class="card-img-top" data="Assets/PDF.pdf" type="application/pdf" width="80%"
+                            height="100%" style="border-radius: 20px 20px 0px 0px;">
+                            <p> Fallback text in case your browser doesn't
+                                support this</p>
+                        </object>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PDF Viewer</h5>
+                            <p class="card-text">HTML Jobsheet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="row justify-content-md-center">
+                <div class="card h-20" style="border-radius: 20px; width: 512px; padding: 20px; margin-bottom: 10px;">
+                    <h5 class="card-title">Input Form</h5>
+                    <p class="card-text" style="font-style: italic;">Online Shop Payment</p>
+                </div>
+            </div>
+
+        </div>
+        <form id="payment" style="width: 512px; border-radius: 20px;">
+            <center>
+                <fieldset>
+                    <legend>Your details</legend>
+                    <ol>
+                        <li>
+                            <label for="name0">First name</label>
+                            <input id="name0" name="name0" type="text" placeholder="First name" required autofocus>
+                        </li>
+                        <li>
+                            <label for="name1">Last name</label>
+                            <input id="name1" name="name1" type="text" placeholder="Last name" required autofocus>
+                        </li>
+                        <li>
+                            <label for="email">"Email"</label>
+                            <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+                        </li>
+                        <li>
+                            <label for="phone">"Phone"</label>
+                            <input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required>
+                        </li>
+                        <li>
+                            <label for="age">Age</label>
+                            <input id="age" name="age" type="number" required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery address</legend>
+                    <ol>
+                        <li>
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="5" required></textarea>
+                        </li>
+                        <li>
+                            <label for="postcode">Post code</label>
+                            <input id="postcode" name="postcode" type="text" required>
+                        </li>
+                        <li>
+                            <label for="country">Country</label>
+                            <input id="country" name="country" type="text" required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Card details</legend>
+                    <ol>
+                        <li>
+                            <fieldset>
+                                <legend>Card type</legend>
+                                <ol>
+                                    <center>
+                                        <div class="form-check" style="width: 35%;">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="VISA">
+                                            <label class="form-check-label" for="VISA">
+                                                Visa
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width: 35%;">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="MASTERCARD" checked>
+                                            <label class="form-check-label" for="MASTERCARD">
+                                                MasterCard
+                                            </label>
+                                        </div>
+                                    </center>
+                                </ol>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <label for="cardnumber">Card number</label>
+                            <input id="cardnumber" name="cardnumber" type="text" required>
+                        </li>
+                        <li>
+                            <label for="secure">Security code</label>
+                            <input id="secure" name="secure" type="text" required>
+                        </li>
+                        <li>
+                            <label for="namecard">Name on card</label>
+                            <input id="namecard" name="namecard" type="text" placeholder="Exact name as on the card"
+                                required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>User Agreement</legend>
+                    <ol>
+                        <li>
+                            <div class="form-check">
+                                <center>
+                                    <input type="checkbox" value="1" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        I am accept the "User Agreement"
+                                    </label>
+                                </center>
+                            </div>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <button type="submit">Buy it!</button>
+                </fieldset>
+            </center>
+        </form>
+
+    </center>
+</body>
+</html>
