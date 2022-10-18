@@ -121,3 +121,22 @@ form#form button:hover {
     left: 1rem;
     transform: translateY(-50%);
 }
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+tr:hover {
+    background-color: #d7eed6;
+}
+
+td {
+    border: 0;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
