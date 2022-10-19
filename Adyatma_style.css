@@ -21,8 +21,3 @@ td {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
-p::first-letter {
-  color: goldenrod;
-  font-size: xx-large;
-}
