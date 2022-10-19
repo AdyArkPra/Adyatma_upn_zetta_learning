@@ -1,9 +1,28 @@
 .card-img-top {
-    height: 6vw;
-    object-fit: cover;
+    height: 20vw;
+    object-fit: contain;
 }
 
-.card-img-top1 {
-    height: 3vw;
-    object-fit: scale-down;
+tr {
+    border-bottom: 1px solid rgb(217, 217, 217);
+    background-color: white;
+}
+
+tr:hover {
+    background-color: #ff000081;
+}
+
+tr:nth-child(odd) {
+    background-color: lightsteelblue;
+}
+
+td {
+    border: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p::first-letter {
+  color: goldenrod;
+  font-size: xx-large;
 }
